@@ -1,9 +1,10 @@
 <table>
   <thead>
     <tr>
-      <th>ID</th>
+      <th>ID&nbsp;&nbsp;&nbsp;&nbsp;</th>
       <th>Name</th>
       <th>Body</th>
+      <th>Age</th>
     </tr>
   </thead>
 
@@ -13,6 +14,7 @@
         <td><%= article.id %></td>
         <td><%= article.name %></td>
         <td><%= article.body %></td>
+        <td><%= article.age %></td><br>
         <td><%= link_to 'View', article_show_path(article) %></td>
         <td><%= link_to 'Update', article_edit_path(article) %></td>
         <td><%= link_to 'Delete', article_delete_path(article), method: :delete, data: { confirm: "Are you sure you want to delete this article?" } %></td>
@@ -22,4 +24,4 @@
   </tbody>
 </table>
 
-<%= link_to 'New article', articles_new_path %>
+<%# <%= link_to 'New article', articles_new_path %>
